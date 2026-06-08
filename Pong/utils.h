@@ -1,0 +1,19 @@
+#pragma once
+
+typedef char s8;
+typedef int s32;
+typedef unsigned int u32;
+typedef long long s64;
+typedef unsigned char u8;
+typedef unsigned long long u64;
+typedef short s16;
+typedef unsigned short u16;
+
+#define internal static
+#define global static
+inline int clampInt(int min, int val, int max)
+{
+    if (val < min) return min;
+    if (val > max) return max;
+    return val;
+}
